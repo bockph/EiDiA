@@ -1,21 +1,14 @@
 import React from 'react';
-import { Dialog, DialogTitle, Typography, Button, Box, Input } from '@material-ui/core';
-import PersonIcon from '@material-ui/icons/Person';
-import AddIcon from '@material-ui/icons/Add';
-import {Row, Column} from '../../../support files/constants';
-import {RecordSymbol} from "../../fileCabinet/RecordSymbol";
+import {Button, Input, Typography} from '@material-ui/core';
+import {Column, Row} from '../../../support files/constants';
 import styled from "styled-components";
-import SaveTemplateWindow from './SaveTemplateWindow';
-import FormLabel from '@material-ui/core/FormLabel';
-import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import Checkbox from '@material-ui/core/Checkbox';
 import Preview from './Preview';
 
 
-const styles={
+const styles = {
     column: {
         margin: "15px",
     },
@@ -29,12 +22,15 @@ const styles={
         margin: "15px",
         align: "left",
         bottom: 0,
+        background: "#457b9d",
+
     },
     button_right: {
         margin: "15px",
         align: "right",
         bottom: 0,
-        right:0,
+        right: 0,
+        background: "#457b9d",
     }
 }
 
@@ -83,7 +79,7 @@ export default class ExportDocumentWindow extends React.Component {
                             </Typography>
                             <Input placeholder="Search Records ..." fullWidth={true}  inputProps={{ 'aria-label': 'description' }} value={this.props.value} onChange={this.props.updateSearch.bind(this)} />
                             <FlexRow>
-                                {filteredRecords.map(record => <RecordSymbol fontSize='3vw' labelFontSize='10px' key={record} name={record}/>)}
+
                             </FlexRow>
                         </div>
                     </Row>

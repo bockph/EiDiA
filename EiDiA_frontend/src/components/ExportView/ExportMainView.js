@@ -1,10 +1,9 @@
 import React from 'react';
 import DocEditor from "./Subcomponents/DocEditor";
 import RightSidepanel from "./RightSidepanel";
-import {RichUtils, EditorState, ContentState} from 'draft-js';
+import {ContentState, convertToRaw, EditorState, RichUtils} from 'draft-js';
 import FloatingWindows from './FloatingWindow';
-import {Row, Column, documentMockData, llorem} from '../../support files/constants';
-import {convertToRaw} from 'draft-js';
+import {Column, documentMockData, llorem, Row} from '../../support files/constants';
 
 function Dialog(props) {
     if (props.currentPage == "Select Template") {
@@ -51,6 +50,7 @@ const components = {
 }
 
 export default class ExportMainView extends React.Component {
+
     constructor(props) {
         super(props);
         this.editorText = llorem["Template 0"];
@@ -142,7 +142,7 @@ export default class ExportMainView extends React.Component {
         var documentData = []
         selectedDocs.forEach((name) => { if (name in documents) documentData.push(documents[name])});
 
-        var editorText = this.getTextFromEditorstate(newState.editorState);;
+        var editorText = this.getTextFromEditorstate(newState.editorState);
         for (let k of Object.keys(variables)) {
             if (isPath(k.slice(1))) {
                 let tmp = k.split("/");

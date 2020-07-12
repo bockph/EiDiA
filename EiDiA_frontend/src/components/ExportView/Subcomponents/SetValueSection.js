@@ -1,10 +1,8 @@
 import React from 'react';
 import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
-import {Row, Column} from '../../../support files/constants';
 import FormHelperText from '@material-ui/core/FormHelperText';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
@@ -16,7 +14,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import {documentMockData} from '../../../support files/constants'; 
 
 const styles = {
     textField: {
@@ -24,7 +21,8 @@ const styles = {
     },
     button: {
         margin: "15px",
-        right: 0
+        right: 0,
+        background: "#457b9d",
     }
 }
 

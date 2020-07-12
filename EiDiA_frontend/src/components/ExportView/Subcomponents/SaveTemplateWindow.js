@@ -1,13 +1,10 @@
 import React from 'react';
-import { Dialog, DialogTitle, Typography, Button, Box, Input } from '@material-ui/core';
-import PersonIcon from '@material-ui/icons/Person';
-import AddIcon from '@material-ui/icons/Add';
-import {Row, Column} from '../../../support files/constants';
-import {RecordSymbol} from "../../fileCabinet/RecordSymbol";
+import {Box, Button, Input, Typography} from '@material-ui/core';
+import {Column, Row} from '../../../support files/constants';
+import RecordSymbol from "../../fileCabinet/RecordSymbol";
 import styled from "styled-components";
-import SaveTemplateWindow from './SaveTemplateWindow';
 
-const styles={
+const styles = {
     box: {
         width: '7cm',
         height: '10cm',

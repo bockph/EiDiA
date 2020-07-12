@@ -1,10 +1,6 @@
 import React from 'react';
-import { Dialog, DialogTitle, Typography, Button, Box, Input } from '@material-ui/core';
-import PersonIcon from '@material-ui/icons/Person';
-import AddIcon from '@material-ui/icons/Add';
-import {Row, Column} from '../../support files/constants';
+import {Dialog, DialogTitle} from '@material-ui/core';
 import {RecordSymbol} from "../fileCabinet/RecordSymbol";
-import styled from "styled-components";
 import SaveTemplateWindow from './Subcomponents/SaveTemplateWindow';
 import ExportDocumentWindow from './Subcomponents/ExportDocumentWindow';
 

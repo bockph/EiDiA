@@ -1,9 +1,9 @@
 import React from 'react';
-import { render } from 'react-dom';
 import Button from '@material-ui/core/Button';
 
 const buttonStyle= {
-    margin: "15px"
+    margin: "15px",
+    background: "#457b9d",
 }
 
 export default class ExportSection extends React.Component {

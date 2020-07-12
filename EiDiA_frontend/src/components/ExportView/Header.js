@@ -1,14 +1,13 @@
 "use strict";
 
 import React from 'react';
-import {AppBar, IconButton, makeStyles, Menu, MenuItem, Toolbar, Typography} from "@material-ui/core";
+import {makeStyles, Toolbar, Typography} from "@material-ui/core";
 
 const useStyles = makeStyles(theme => ({  //Elemente stylen
     root: {
         position: "relative",
     },
     toolBar: {
-        background: "#DADADA",
         align: "top",
         minHeight: "10px"
     },
@@ -17,13 +16,15 @@ const useStyles = makeStyles(theme => ({  //Elemente stylen
     },
     title: {
         flexGrow: 1,
-        color: "black",
-        background: "#b0b0b0",
+        color: "#f1faee",
+        background: "#457b9d",
+
         //boxShadow: "0px 0px 4px 0px rgba(0,0,0,0.75)"
     },
     titleUnselect: {
         flexGrow: 1,
-        color: "gray",
+        color: "lightgray",
+        background: "#1d3557"
     },
     
     }
